@@ -279,7 +279,8 @@ Apres Nettoyage :
 
 
 # Nettoyage de countries:
-`----------Étape 1 : Verifier et Modifier types de donnees :`
+
+#### Étape 1 : Verifier et Modifier types de donnees :
 └── Nom_Pays --> text
 └── Code_ISO3 --> text
 └── region --> text
@@ -289,7 +290,7 @@ Apres Nettoyage :
 └── Population --> entier
 └── Independent --> entier
 
-#### Étape 3 : Gere les valeurs nulls :
+#### Étape 2 : Gere les valeurs nulls :
 dans ce tableau on deux colonnes ayant des valeurs nulls:
 └── language: 1% vide 
 
