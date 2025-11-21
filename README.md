@@ -318,7 +318,7 @@ Traduire les formules mathématiques des KPI en mesures DAX dans Power BI, en v�
 
 ---
 
-##  Tableau des mesures DAX
+##  Tableau des KPI
 
 | Thème | KPI | Description |
 |-------|-----|-------------|
@@ -343,7 +343,7 @@ Traduire les formules mathématiques des KPI en mesures DAX dans Power BI, en v�
 
 
 
-# 📝 Étape 5 – Construction du tableau de bord Power BI
+#### 📝 Étape 5 – Construction du tableau de bord Power BI
 
 ## Objectif
 Créer un tableau de bord interactif de 4 pages, permettant de visualiser les KPI et d’explorer les données selon différents segments.
