@@ -1,8 +1,12 @@
 # Global Development Dashboard Documentation
 
 ## 👥 Présentation de l'équipe
-- Membres : salma, Safiya
+- Membres : Salma, Safiya, asmaa, fatimazahra
 - Taches : voir Trello
+
+![trello](https://github.com/user-attachments/assets/6f31a6e7-b59d-46ef-a1a8-78f97f968003)
+
+
 
 ## Importation des donnes via les APIs (WORLD BANK / Rest Coutries)
 ### PHASE 1 : IMPORT DES DONNÉES WORLD BANK
