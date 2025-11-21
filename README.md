@@ -167,7 +167,7 @@ Table **world bank data** (1720 lignes)
 └── PIB
 └── Population
 ************************************
-Table Countries (250 lignes)
+Table **Countries** (250 lignes)
 └── common
 └── Code_ISO3
 └── region
@@ -176,8 +176,9 @@ Table Countries (250 lignes)
 └── language
 ************************************
 
-# Nettoyage de WB_indcateurs:
-`----------Étape 1 : Verifier et Modifier types de donnees :`
+# Nettoyage de world bank data:
+
+#### Étape 1 : Verifier et Modifier types de donnees :
 └── Nom_Pays --> text
 └── Code_ISO3 --> text
 └── Annee --> entier
