@@ -28,7 +28,7 @@ per_page=20000 => sans le parametre per_page, World Bank API applique une limite
 |Esperance de vie|SP.DYN.LE00.IN      |Émissions de CO₂ (kilotonnes)|
 
 
-`----------Étape 1.2 : Importer les donnees correspond au PIB :`
+#### Étape 1.2 : Importer les donnees correspond au PIB :
 pour importer les donnees qui correspond a cet indicateur on a suit les etapes suivantes:
 
 a- ouvrir Power BI
@@ -45,12 +45,12 @@ f- On voit une colonne (Liste des elements) --> On clique sur : Vers la table
 
 g- une colonne appelee Column1 avec des enregistrements --> On clique sur : <-> a cote de "Column1" -->On selectionne juste : indicator, country, countryiso3code, date, value
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b8aac8fd-b9c4-45f8-8efa-8667036725ef" />
+<img width="920" height="500" alt="image" src="https://github.com/user-attachments/assets/b8aac8fd-b9c4-45f8-8efa-8667036725ef" />
 
 
 h- developper encore (colonnes imbriquees) et pour la colonne Column1.indicator(id, value) et pour la colonne Column1.country(id, value)
 
-<img width="1920" height="1080" alt="image-1" src="https://github.com/user-attachments/assets/7312423d-7daa-41da-9a4e-a508751da8db" />
+<img width="920" height="500" alt="image-1" src="https://github.com/user-attachments/assets/7312423d-7daa-41da-9a4e-a508751da8db" />
 
 
 i- supprimer colones inutiles et renommer les colonnes restantes :
@@ -213,8 +213,9 @@ Andorra, Curacao, Isle of Man, Liechtenstein, Monaco, Montenegro, San Marino, Se
 Micro-États (<100k habitants, peu d’industrie) → CO₂ ≈ 0 :
 → Pour: Andorra, Monaco, Liechtenstein, San Marino, Isle of Man, St. Martin, Sint Maarten
 
-![CO2_null](https://github.com/user-attachments/assets/08a394a1-c377-41ee-b88d-968bb66a9975)
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/08a394a1-c377-41ee-b88d-968bb66a9975" width="350">
+</p>
 
 Pays avec industrie ou population significative → utiliser année précédente :
 → Pour: Montenegro, Serbia, Curacao
@@ -251,13 +252,17 @@ a- Pour SOUTH SUDAN (SSD): On va garder les vals null de SOUTH SUDAN de GDP tel 
 
 b- Pour CUB: remplissage du pays CUB qui a val null juste dans 2021 et 2022 par moyenne des GDP dans [2015-2020].
 
-![gdp_cub](https://github.com/user-attachments/assets/737d47c2-e980-4fd0-a1ba-0b04fe0842fb)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/737d47c2-e980-4fd0-a1ba-0b04fe0842fb" width="350">
+</p>
 
 
 c- Pour YEM: On va utiliser la dernière valeur connue (2018) pour remplir 2019–2022 car la moyenne créerait une valeur plus haute que les dernières années, ce qui serait irréaliste, car le pays était en pleine guerre et son économie continuait de s’effondrer.
 
-![gdp_yem](https://github.com/user-attachments/assets/0522fc1b-5362-42bb-b0d0-b523d5012366)
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0522fc1b-5362-42bb-b0d0-b523d5012366" width="350">
+</p>
 
 d- PRK – Corée du Nord (North Korea): la Corée du Nord (PRK) apparaît dans la base de la Banque mondiale avec certaines données (population, espérance de vie, CO₂), mais pas le PIB car ces données ne proviennent PAS officiellement du gouvernement nord-coréen mais la Banque mondiale peut utilise des estimations externes .Mais le PIB est impossible à estimer sans comptes nationaux donc il va rester null.
 
@@ -358,4 +363,47 @@ Créer un tableau de bord interactif de 4 pages, permettant de visualiser les KP
 | Région | Comparaison par continents et sous-régions | Histogrammes, cartes choroplèthes, KPI résumés par région |
 | Pays | Fiche pays détaillée | Tableaux et cartes par pays, évolution du PIB, CO₂, population |
 | Corrélation & Durabilité | Analyse de l’impact économique vs environnemental | Graphiques de dispersion PIB vs CO₂, ratio CO₂/PIB, tendances par région |
+
+
+#### Vue mondiale:
+
+<img width="1018" height="575" alt="image" src="https://github.com/user-attachments/assets/31599deb-9a8b-4c77-a42f-e910f03227c8" />
+
+#### Vue Régional:
+##### page 1:
+
+<img width="1018" height="575" alt="image" src="https://github.com/user-attachments/assets/94c1e31b-85d9-48ff-a4db-d8a46b13005c" />
+
+##### page 2:
+
+<img width="1016" height="577" alt="image" src="https://github.com/user-attachments/assets/c86e9481-9529-4b69-a763-52b1d6ccc4da" />
+
+
+#### Vue de pays:
+
+<img width="1016" height="572" alt="image" src="https://github.com/user-attachments/assets/9b395c92-f442-4889-b048-cf8a40be4322" />
+
+#### Vue de correlation:
+
+<img width="1023" height="581" alt="image" src="https://github.com/user-attachments/assets/3411d0ba-acd3-4a5b-b13d-60b1962ddc2b" />
+
+
+# Analyse et interprétation:
+
+## les 3 pays choisies (ex : États-Unis, Inde, Nigeria).
+
+### Quel pays a connu la plus forte croissance depuis 2015 ?
+Parmi les trois pays analysés, l’Inde est celui qui présente la plus forte croissance économique depuis 2015, portée par une expansion démographique soutenue et une transition industrielle rapide.
+
+### Quelle région a amélioré le plus son ratio PIB/CO₂ ?
+La région qui améliore le plus son ratio PIB/CO₂ est l’Europe, grâce à une croissance économique modérée combinée à une réduction progressive des émissions.
+
+### Quels pays combinent forte croissance et faible pollution ?
+Parmi les pays étudiés, le Nigeria présente la meilleure combinaison de croissance économique et de faibles émissions absolues de CO₂, bien que son intensité carbone reste à surveiller. L’Inde et les États-Unis sont des pays à forte croissance mais fortement émetteurs.
+
+### Quelles corrélations apparaissent entre PIB, population et CO₂ ?
+On observe une corrélation positive entre PIB et émissions de CO₂ : plus un pays produit de richesse, plus il génère d’émissions. La relation entre population et CO₂ est moins systématique, car certains pays très peuplés restent faibles émetteurs. La population seule n’explique donc pas la pollution : c’est surtout l’intensité industrielle qui joue un rôle clé.
+
+### Quels enseignements stratégiques pour GDW ?
+Global Development Watch devrait prioriser les investissements dans les pays combinant potentiel de croissance et faible pollution, tout en accompagnant les grandes économies vers des solutions énergétiques propres. Une stratégie différenciée selon les régions est essentielle pour maximiser l’impact du programme World Progress 2030.
 
